@@ -41,10 +41,14 @@
       href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <base href="http://localhost/FinTech/public/" />
+    <base href="<?php print_r($_ENV['app.baseURL']); ?>/" />
     <!-- Icons. Uncomment required icon fonts -->
-    <link rel="stylesheet" href="../Template/Sneat/vendor/fonts/boxicons.css" />
-   
+    <!-- <link rel="stylesheet" href="../Template/Sneat/vendor/fonts/boxicons.css" /> -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet' />
+
+    
+    <script src="../Template/Sneat/vendor/libs/jquery/jquery.js"></script>
+
     <!-- Core CSS -->
     <link rel="stylesheet" href="../Template/Sneat/vendor/css/core.css" class="template-customizer-core-css" />
     <link rel="stylesheet" href="../Template/Sneat/vendor/css/theme-default.css" class="template-customizer-theme-css" />
@@ -142,9 +146,9 @@
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
             <li class="menu-item active">
-              <a href="Dashboard" class="menu-link">
+              <a href="Home" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Dashboard</div>
+                <div data-i18n="Analytics">Home</div>
               </a>
             </li>
 
@@ -159,7 +163,7 @@
                 class="menu-link"
               >
                 <i class="menu-icon tf-icons bx bx-cube"></i>
-                <div data-i18n="Support">Fish Tanks</div>
+                <div data-i18n="Support">My Fish Tanks</div>
               </a>
             </li>
          
@@ -282,16 +286,16 @@
                     <li>
                       <a class="dropdown-item" href="#">
                         <i class="bx bx-user me-2"></i>
-                        <span class="align-middle">My Profile</span>
+                        <span class="align-middle">My Account</span>
                       </a>
                     </li>
-                    <li>
+                    <!-- <li>
                       <a class="dropdown-item" href="#">
                         <i class="bx bx-cog me-2"></i>
                         <span class="align-middle">Settings</span>
                       </a>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                       <a class="dropdown-item" href="#">
                         <span class="d-flex align-items-center align-middle">
                           <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
@@ -299,7 +303,7 @@
                           <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
                         </span>
                       </a>
-                    </li>
+                    </li> -->
                     <li>
                       <div class="dropdown-divider"></div>
                     </li>

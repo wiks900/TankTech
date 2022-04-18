@@ -77,3 +77,101 @@ CRITICAL - 2022-04-17 13:36:35 --> Invalid file: .php
 #6 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 {main}
+ERROR - 2022-04-17 17:31:39 --> Unknown column 'TankId' in 'where clause'
+CRITICAL - 2022-04-17 17:31:39 --> Unknown column 'TankId' in 'where clause'
+#0 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1588): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\FinTech\app\Controllers\FishTanks.php(37): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\FishTanks->TankTimeline('2')
+#6 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishTanks))
+#7 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-17 17:57:27 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::limit()
+#0 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\FishTanks->ViewTank('1')
+#1 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishTanks))
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-17 17:57:31 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::limit()
+#0 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\FishTanks->ViewTank('1')
+#1 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishTanks))
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-17 17:58:11 --> syntax error, unexpected identifier "print_r"
+#0 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('FishTanks/ViewT...')
+#1 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('FishTanks/ViewT...')
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-17 17:58:19 --> syntax error, unexpected identifier "print_r"
+#0 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('FishTanks/ViewT...')
+#1 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('FishTanks/ViewT...')
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-17 17:58:53 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::limit()
+#0 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\FishTanks->ViewTank('2')
+#1 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishTanks))
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-17 18:01:53 --> Undefined variable $Device
+#0 C:\xampp\htdocs\FinTech\app\Views\FishTanks\ViewTank.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 156)
+#1 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('FishTanks/ViewT...', Array, true)
+#4 C:\xampp\htdocs\FinTech\app\Helpers\Template_helper.php(14): view('FishTanks/ViewT...', Array)
+#5 C:\xampp\htdocs\FinTech\app\Controllers\FishTanks.php(72): LoadTemplate('FishTanks/ViewT...', Array)
+#6 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\FishTanks->ViewTank('2')
+#7 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishTanks))
+#8 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-17 18:02:09 --> substr(): Passing null to parameter #1 ($string) of type string is deprecated
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'substr(): Passi...', 'C:\\xampp\\htdocs...', 157)
+#1 C:\xampp\htdocs\FinTech\app\Views\FishTanks\ViewTank.php(157): substr(NULL, 0, 35)
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('FishTanks/ViewT...', Array, true)
+#5 C:\xampp\htdocs\FinTech\app\Helpers\Template_helper.php(14): view('FishTanks/ViewT...', Array)
+#6 C:\xampp\htdocs\FinTech\app\Controllers\FishTanks.php(72): LoadTemplate('FishTanks/ViewT...', Array)
+#7 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\FishTanks->ViewTank('2')
+#8 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishTanks))
+#9 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-04-17 18:18:09 --> Invalid file: FishTanks/TankUpdates/View.php
+#0 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('FishTanks/TankU...')
+#1 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('FishTanks/TankU...', Array, true)
+#2 C:\xampp\htdocs\FinTech\app\Helpers\Template_helper.php(14): view('FishTanks/TankU...', Array)
+#3 C:\xampp\htdocs\FinTech\app\Controllers\TankUpdates.php(33): LoadTemplate('FishTanks/TankU...', Array)
+#4 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\TankUpdates->View('2')
+#5 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TankUpdates))
+#6 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-17 18:23:43 --> Undefined variable $TankUpdate
+#0 C:\xampp\htdocs\FinTech\app\Controllers\TankUpdates.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\TankUpdates->ModifyUpdate('1', '0')
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TankUpdates))
+#3 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-17 18:44:41 --> Undefined property: stdClass::$Color
+#0 C:\xampp\htdocs\FinTech\app\Views\FishTanks\ViewTank.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 153)
+#1 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('FishTanks/ViewT...', Array, true)
+#4 C:\xampp\htdocs\FinTech\app\Helpers\Template_helper.php(14): view('FishTanks/ViewT...', Array)
+#5 C:\xampp\htdocs\FinTech\app\Controllers\FishTanks.php(72): LoadTemplate('FishTanks/ViewT...', Array)
+#6 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\FishTanks->ViewTank('2')
+#7 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishTanks))
+#8 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

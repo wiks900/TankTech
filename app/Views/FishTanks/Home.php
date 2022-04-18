@@ -5,6 +5,7 @@
         $Config = array(
             'CardTitle' => $FishTank->TankName,
             'CardDescription' => $FishTank->TankDescription,
+            'CardImage' => 'Uploads/UserImages/'.$FishTank->TankPhoto,
             'Hyperlink' => 'FishTanks/ViewTank/'.$FishTank->TankId,
         );
         echo OutputHorizontalCard($Config);

@@ -1,0 +1,98 @@
+CRITICAL - 2022-04-18 04:20:57 --> Undefined variable $TankUpdate
+#0 C:\xampp\htdocs\FinTech\app\Views\FishTanks\TankUpdates\View.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2)
+#1 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('FishTanks/TankU...', Array, true)
+#4 C:\xampp\htdocs\FinTech\app\Helpers\Template_helper.php(14): view('FishTanks/TankU...', Array)
+#5 C:\xampp\htdocs\FinTech\app\Controllers\TankUpdates.php(31): LoadTemplate('FishTanks/TankU...', Array)
+#6 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\TankUpdates->View('2')
+#7 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TankUpdates))
+#8 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-18 04:26:23 --> Undefined property: stdClass::$Image
+#0 C:\xampp\htdocs\FinTech\app\Views\FishTanks\TankUpdates\View.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24)
+#1 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('FishTanks/TankU...', Array, true)
+#4 C:\xampp\htdocs\FinTech\app\Helpers\Template_helper.php(14): view('FishTanks/TankU...', Array)
+#5 C:\xampp\htdocs\FinTech\app\Controllers\TankUpdates.php(31): LoadTemplate('FishTanks/TankU...', Array)
+#6 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\TankUpdates->View('2')
+#7 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TankUpdates))
+#8 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-18 04:45:37 --> Undefined variable $TankUpdates
+#0 C:\xampp\htdocs\FinTech\app\Views\FishTanks\TankUpdates\View.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 17)
+#1 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('FishTanks/TankU...', Array, true)
+#4 C:\xampp\htdocs\FinTech\app\Helpers\Template_helper.php(14): view('FishTanks/TankU...', Array)
+#5 C:\xampp\htdocs\FinTech\app\Controllers\TankUpdates.php(55): LoadTemplate('FishTanks/TankU...', Array)
+#6 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\TankUpdates->ModifyUpdate('1', '0')
+#7 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TankUpdates))
+#8 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-18 05:22:02 --> Undefined property: stdClass::$FishTankId
+#0 C:\xampp\htdocs\FinTech\app\Views\FishTanks\TankUpdates\ModifyUpdate.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 41)
+#1 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('FishTanks/TankU...', Array, true)
+#4 C:\xampp\htdocs\FinTech\app\Helpers\Template_helper.php(14): view('FishTanks/TankU...', Array)
+#5 C:\xampp\htdocs\FinTech\app\Controllers\TankUpdates.php(55): LoadTemplate('FishTanks/TankU...', Array)
+#6 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\TankUpdates->ModifyUpdate('2', '0')
+#7 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TankUpdates))
+#8 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-18 05:22:19 --> Undefined variable $Fishtank
+#0 C:\xampp\htdocs\FinTech\app\Views\FishTanks\TankUpdates\ModifyUpdate.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 39)
+#1 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('FishTanks/TankU...', Array, true)
+#4 C:\xampp\htdocs\FinTech\app\Helpers\Template_helper.php(14): view('FishTanks/TankU...', Array)
+#5 C:\xampp\htdocs\FinTech\app\Controllers\TankUpdates.php(55): LoadTemplate('FishTanks/TankU...', Array)
+#6 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\TankUpdates->ModifyUpdate('2', '0')
+#7 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TankUpdates))
+#8 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-18 05:48:33 --> Call to undefined function App\Controllers\PrepareMergeStatements()
+#0 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\TankUpdates->ProcessUpdate()
+#1 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TankUpdates))
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-18 05:48:52 --> syntax error, unexpected token "=", expecting ")"
+#0 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\Controller.php(85): helper(Array)
+#1 C:\xampp\htdocs\FinTech\app\Controllers\BaseController.php(49): CodeIgniter\Controller->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#3 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 05:50:25 --> Undefined array key "Date"
+#0 C:\xampp\htdocs\FinTech\app\Helpers\MiscDatabase_helper.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 19)
+#1 C:\xampp\htdocs\FinTech\app\Controllers\TankUpdates.php(75): PrepareMergeStatements(Array, Array)
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\TankUpdates->ProcessUpdate()
+#3 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TankUpdates))
+#4 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 06:01:24 --> Undefined variable $Columns
+#0 C:\xampp\htdocs\FinTech\app\Helpers\MiscDatabase_helper.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 31)
+#1 C:\xampp\htdocs\FinTech\app\Controllers\TankUpdates.php(78): PrepareMergeStatements(Array)
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\TankUpdates->ProcessUpdate()
+#3 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TankUpdates))
+#4 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-18 06:02:18 --> Undefined array key "TableName"
+#0 C:\xampp\htdocs\FinTech\app\Helpers\MiscDatabase_helper.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\FinTech\app\Controllers\TankUpdates.php(78): PrepareMergeStatements(Array)
+#2 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\TankUpdates->ProcessUpdate()
+#3 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TankUpdates))
+#4 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

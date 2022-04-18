@@ -23,11 +23,35 @@ class FishTanks extends BaseController
                                     ));
     }
 
+    public function TankTimeline($TankId)
+    {
+        $builder = $this->db->table('fishtanks');
+        $query = $builder->getwhere(array('TankId' => $TankId));
+        $FishTank = $query->getResult();
+        
+        if(!empty($FishTank)){
+            $FishTank = $FishTank[0];
+        }
+        
+        $builder = $this->db->table('fishtankupdates');
+        $query = $builder->getwhere(array('TankId' => $TankId,
+                                           ));
+        $TankUpdates = $query->getResult();
+
+        return LoadTemplate('FishTanks/TankTimeLine', array(
+                                               'FishTank' => $FishTank,
+                                                'TankUpdates' => $TankUpdates,
+                                    ));
+    }
+
+
     public function ViewTank($TankId)
     {
         $builder = $this->db->table('fishtanks');
         $query = $builder->getwhere(array('TankId' => $TankId));
         $FishTank = $query->getResult();
+
+
         
         if(!empty($FishTank)){
             $FishTank = $FishTank[0];
@@ -39,11 +63,18 @@ class FishTanks extends BaseController
         $TankDevices = $query->getResult();
 
 
+        $builder = $this->db->table('fishtankupdates')->join('updatetypes', 'updatetypes.UpdateTypeId = fishtankupdates.UpdateTypeId', 'left')->limit(3);
+        $query = $builder->getwhere(array('TankId' => $TankId,
+                                                     ));
+        $TankUpdates = $query->getResult();
 
+        
+        // print_r($TankUpdates);
         // return view('welcome_message');
         return LoadTemplate('FishTanks/ViewTank', array(
                                                 'FishTank' => $FishTank,
                                                 'TankDevices' => $TankDevices,
+                                                'TankUpdates' => $TankUpdates,
                                     ));
     }
 

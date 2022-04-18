@@ -35,22 +35,22 @@
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
-    <script src="../Template/Sneat/vendor/libs/popper/popper.js"></script>
-    <script src="../Template/Sneat/vendor/js/bootstrap.js"></script>
-    <script src="../Template/Sneat/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="Template/Sneat/vendor/libs/popper/popper.js"></script>
+    <script src="Template/Sneat/vendor/js/bootstrap.js"></script>
+    <script src="Template/Sneat/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-    <script src="../Template/Sneat/vendor/js/menu.js"></script>
+    <script src="Template/Sneat/vendor/js/menu.js"></script>
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="../Template/Sneat/vendor/libs/apex-charts/apexcharts.js"></script>
-    <script src="../Template/Sneat/vendor/libs/masonry/masonry.js"></script>
+    <script src="Template/Sneat/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="Template/Sneat/vendor/libs/masonry/masonry.js"></script>
 
     <!-- Main JS -->
-    <script src="../Template/Sneat/js/main.js"></script>
+    <script src="Template/Sneat/js/main.js"></script>
 
     <!-- Page JS -->
-    <script src="../Template/Sneat/js/dashboards-analytics.js"></script>
+    <script src="Template/Sneat/js/dashboards-analytics.js"></script>
 
     
     <!-- Bootstrap Datatables -->

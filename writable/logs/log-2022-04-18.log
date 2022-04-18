@@ -96,3 +96,13 @@ CRITICAL - 2022-04-18 06:02:18 --> Undefined array key "TableName"
 #4 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\xampp\htdocs\FinTech\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2022-04-18 08:15:20 --> syntax error, unexpected token "*", expecting end of file
+#0 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('FishTanks/ViewT...', Array, true)
+#2 C:\xampp\htdocs\FinTech\app\Helpers\Template_helper.php(14): view('FishTanks/ViewT...', Array)
+#3 C:\xampp\htdocs\FinTech\app\Controllers\FishTanks.php(77): LoadTemplate('FishTanks/ViewT...', Array)
+#4 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\FishTanks->ViewTank('1')
+#5 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FishTanks))
+#6 C:\xampp\htdocs\FinTech\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\FinTech\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

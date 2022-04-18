@@ -38,6 +38,7 @@ class BaseController extends Controller
     protected $helpers = [  'Template',
                             'HTMLCard',                   
                             'MiscDatabase',                   
+                            'ImageChart',                   
                             ];
 
     /**

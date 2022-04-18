@@ -1,6 +1,106 @@
 <?php 
 
 
+
+	/* 
+	<img src="
+	https://image-charts.com/chart?
+	cht=pc
+	&chs=999x999
+	&chd=a:1234589.41,465453,5456421.11,564648|46465,5445,5314
+	&chl=DRAUGHT|SPIRITS|SOFTDRINKS|WINE|PUB|HOTEL|RESTAURANT">
+		
+	$Criteria = array();
+	$Criteria['ChartType'] = "pd";
+	$Criteria['ChartSize'] = "500x500";
+	$Criteria['ChartLabelsAndData'] = array(
+										array("SPIRITS"=>21,
+											"SOFTDRINKS"=>41,
+											"WINE"=>32,
+											"PUB"=>5 ),
+										array("PUB"=>10,
+											"HOTEL"=>90,
+											"WINE"=>50,
+											"RESTAURANT"=>20 )); //if you wish to use the concentric pie chart (inner split) type = pc or pd
+	$Criteria['PieLabelsAndData'] = array(
+										array("SPIRITS"=>21,
+											"SOFTDRINKS"=>41,
+											"WINE"=>32,
+											"PUB"=>5 )); // standard pie chart. type = p
+	$Criteria['DisplayLabels'] = true;
+	$Criteria['DisplayLegends'] = false;
+	$Criteria['DoughnutCenterValue'] = 1000;
+	$Criteria['ChartTitle'] = "Test Chart";
+	$Chart = OutputLineChart($Criteria);
+	
+	*/
+	
+	function OutputLineChart($Criteria){
+		
+		foreach($Criteria as $Key => $Value){
+			switch($Key){
+				case 'ChartType':
+					$Type = $Value;
+					break;
+				case 'ChartSize':
+					$Size = $Value;
+					break;
+				case 'ChartLabelsAndData':
+					$LabelsString = "";
+					$DataString = "";
+					$LegendsString = "";
+					foreach($Value as $Series){
+						$DataString .= (($DataString != "" ) ? "|" : "");
+						foreach($Series as $Label => $Val){
+							$LabelsString .= ((strlen($LabelsString) > 0) ? "|" : "").((isset($Criteria['DisplayLabels'][$Label])) ? $Criteria['DisplayLabels'][$Label] : $Label) ;
+							$LegendsString .= (!empty($LegendsString) ? "|" : "").((isset($Criteria['DisplayLegends'][$Label])) ? $Criteria['DisplayLegends'][$Label] : $Label);
+							// $DataString .= (((!empty($DataString)) && (substr($DataString, -1) != "|")) ? "," : "").$Val;
+							// a value of 0 is read as empty so needs to be based on string length to account for thisw 
+							$DataString .= (((strlen($DataString) > 0) && (substr($DataString, -1) != "|")) ? "," : "").$Val;
+						}
+					}
+					break;
+				case 'DisplayLegends':
+					if($Value){
+						$DisplayLegends = true;
+					}else{
+						$DisplayLegends = false;
+					}
+					break;
+				case 'DisplayLabels':
+					if($Value){
+						$DisplayLabels = true;
+					}else{
+						$DisplayLabels = false;
+					}
+					break;
+				case 'ChartTitle':
+					$Title = $Value;
+					break;
+					
+			}
+		}
+		
+		$ChartString = "				
+						<img src='https://image-charts.com/chart?"
+						.(isset($Type) ? "cht=".$Type : 'cht=lc')
+						.(isset($Size) ? "&chs=".$Size : '')
+						.(isset($LabelsString) && $DisplayLabels == true  ? "&chl=".$LabelsString : '')
+						.(isset($LegendsString) && $DisplayLegends == true ? "&chdl=".$LegendsString : '')
+						.(isset($DataString) ? "&chd=t:".$DataString : '')
+						.(isset($Title) ? "&chtt=".$Title : ''); 
+						
+		$ChartString .= "' class=\"w-100\"  >";
+
+		// echo $ChartString; exit;
+		return $ChartString;
+		
+	}
+
+
+
+
+
 	/* 
 	<img src="
 	https://image-charts.com/chart?
